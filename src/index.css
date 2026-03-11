@@ -90,6 +90,7 @@ textarea {
   font-size: clamp(1.6rem, 5vw, 2.5rem);
   letter-spacing: 0.02em;
   margin: 0 0 1rem;
+  text-align: center;
 }
 
 .sectionLead {
