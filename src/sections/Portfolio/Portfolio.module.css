@@ -1,0 +1,44 @@
+.grid {
+  margin-top: 1.8rem;
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.tile {
+  grid-column: span 4;
+  overflow: hidden;
+}
+
+.tileMedia {
+  height: 180px;
+  background: radial-gradient(400px 240px at 30% 30%, rgba(255, 230, 0, 0.18), transparent 55%),
+    linear-gradient(135deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.02));
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.tileBody {
+  padding: 1rem 1.1rem 1.15rem;
+}
+
+.title {
+  margin: 0;
+  font-weight: 900;
+}
+
+.subtitle {
+  margin: 0.4rem 0 0;
+  color: rgba(255, 255, 255, 0.72);
+}
+
+@media (max-width: 1023px) {
+  .tile {
+    grid-column: span 6;
+  }
+}
+
+@media (max-width: 640px) {
+  .tile {
+    grid-column: span 12;
+  }
+}
