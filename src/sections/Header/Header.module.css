@@ -187,6 +187,17 @@
 }
 
 @media (max-width: 767px) {
+  .navbarContainer {
+    position: relative;
+    justify-content: space-between;
+  }
+
+  .navLogo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
   .menuToggle {
     display: inline-block;
   }
@@ -195,6 +206,7 @@
     display: inline-flex;
     padding: 0.75rem 1rem;
     font-size: 0.8rem;
+    margin-left: auto;
   }
 
   .navLogo img {
